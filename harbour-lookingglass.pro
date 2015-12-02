@@ -16,6 +16,11 @@ CONFIG += sailfishapp
 
 SOURCES += src/harbour-lookingglass.cpp
 
+
+appicons.path = /usr/share/icons/hicolor
+appicons.files = appicons/*
+INSTALLS += appicons
+
 OTHER_FILES += qml/harbour-lookingglass.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
@@ -25,7 +30,11 @@ OTHER_FILES += qml/harbour-lookingglass.qml \
     rpm/harbour-lookingglass.yaml \
     translations/*.ts \
     harbour-lookingglass.desktop \
-    qml/pages/Glass.qml
+    qml/pages/Glass.qml \
+    appicons/86x86/apps/harbour-lookingglass.png \
+    appicons/108x108/apps/harbour-lookingglass.png \
+    appicons/128x128/apps/harbour-lookingglass.png \
+    appicons/256x256/apps/harbour-lookingglass.png
 
 # to disable building translations every time, comment out the
 # following CONFIG line
